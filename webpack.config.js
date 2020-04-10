@@ -9,9 +9,10 @@ module.exports = {
   },
   devServer: {
     contentBase: [
-      path.join(__dirname, 'dist'),
+      path.join(__dirname, 'public'),
       path.join(__dirname, 'src'),
     ],
+    watchContentBase: true,
     port: 9000,
   },
   module: {
